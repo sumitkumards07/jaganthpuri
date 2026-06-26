@@ -22,7 +22,7 @@ export function Contact() {
   };
 
   return (
-    <>
+    <section id="contact" className="pt-20">
       <div className="bg-[#eab308] text-[#1e3a5f] py-12 text-center">
         <h1 className="text-4xl font-bold">Contact Us</h1>
       </div>
@@ -111,6 +111,20 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </>
+
+      {/* Google Map Section for Puri */}
+      <div className="w-full h-96 bg-gray-200 mt-12">
+        <iframe
+          title="Jagannath Puri Location"
+          src="https://maps.google.com/maps?q=Shree+Jagannath+Temple,+Puri,+Odisha&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
   );
 }

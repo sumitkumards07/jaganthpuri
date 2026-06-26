@@ -42,7 +42,7 @@ export function Rooms() {
   ];
 
   return (
-    <>
+    <section id="rooms" className="pt-20">
       <div className="bg-[#eab308] text-[#1e3a5f] py-12 text-center">
         <h1 className="text-4xl font-bold">Room Booking</h1>
       </div>
@@ -94,6 +94,6 @@ export function Rooms() {
           phoneNumber={PHONE_NUMBER}
         />
       )}
-    </>
+    </section>
   );
 }

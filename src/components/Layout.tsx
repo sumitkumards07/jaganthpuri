@@ -27,11 +27,11 @@ export function Layout() {
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <Link to="/" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/') ? 'text-[#eab308] border-b-2 border-[#eab308]' : 'text-gray-600 hover:text-[#eab308]'}`}>Home</Link>
-              <Link to="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-[#eab308] border-b-2 border-[#eab308]' : 'text-gray-600 hover:text-[#eab308]'}`}>About</Link>
-              <Link to="/rooms" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/rooms') ? 'text-[#eab308] border-b-2 border-[#eab308]' : 'text-gray-600 hover:text-[#eab308]'}`}>Room Booking</Link>
-              <Link to="/faq" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/faq') ? 'text-[#eab308] border-b-2 border-[#eab308]' : 'text-gray-600 hover:text-[#eab308]'}`}>FAQ</Link>
-              <Link to="/contact" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/contact') ? 'text-[#eab308] border-b-2 border-[#eab308]' : 'text-gray-600 hover:text-[#eab308]'}`}>Contact</Link>
+              <Link to="/#home" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/') && location.hash === '' ? 'text-[#eab308] border-b-2 border-[#eab308]' : 'text-gray-600 hover:text-[#eab308]'}`}>Home</Link>
+              <a href="/#about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#eab308]">About</a>
+              <a href="/#rooms" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#eab308]">Room Booking</a>
+              <a href="/#faq" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#eab308]">FAQ</a>
+              <a href="/#contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#eab308]">Contact</a>
             </div>
             <div className="-mr-2 flex items-center md:hidden">
               <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#1e3a5f]">
@@ -45,11 +45,11 @@ export function Layout() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link to="/" onClick={() => setIsMenuOpen(false)} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') ? 'text-gray-900 bg-gray-50' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`}>Home</Link>
-              <Link to="/about" onClick={() => setIsMenuOpen(false)} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-gray-900 bg-gray-50' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`}>About</Link>
-              <Link to="/rooms" onClick={() => setIsMenuOpen(false)} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/rooms') ? 'text-gray-900 bg-gray-50' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`}>Room Booking</Link>
-              <Link to="/faq" onClick={() => setIsMenuOpen(false)} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/faq') ? 'text-gray-900 bg-gray-50' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`}>FAQ</Link>
-              <Link to="/contact" onClick={() => setIsMenuOpen(false)} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact') ? 'text-gray-900 bg-gray-50' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`}>Contact</Link>
+              <Link to="/#home" onClick={() => setIsMenuOpen(false)} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') && location.hash === '' ? 'text-gray-900 bg-gray-50' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`}>Home</Link>
+              <a href="/#about" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50">About</a>
+              <a href="/#rooms" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50">Room Booking</a>
+              <a href="/#faq" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50">FAQ</a>
+              <a href="/#contact" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50">Contact</a>
             </div>
           </div>
         )}

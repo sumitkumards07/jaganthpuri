@@ -7,7 +7,7 @@ export function About() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   return (
-    <>
+    <section id="about" className="pt-20">
       <div className="bg-[#eab308] text-[#1e3a5f] py-12 text-center">
         <h1 className="text-4xl font-bold">About Us</h1>
       </div>
@@ -176,6 +176,6 @@ export function About() {
           phoneNumber={PHONE_NUMBER}
         />
       )}
-    </>
+    </section>
   );
 }

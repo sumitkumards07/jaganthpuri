@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 @theme {
   --color-on-primary-fixed: #001848;
   --color-surface-bright: #f8f9fb;

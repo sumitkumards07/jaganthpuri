@@ -1,6 +1,10 @@
 import React from 'react';
 import { PHONE_NUMBER } from '../components/Layout';
 import { MapPin, Wifi, HeadphonesIcon, Bed, Monitor, Bath, Laptop, Star, Snowflake, Sofa, Phone } from 'lucide-react';
+import { About } from './About';
+import { Rooms } from './Rooms';
+import { FAQ } from './FAQ';
+import { Contact } from './Contact';
 
 export function Home() {
   const handleBookRoom = (roomName: string) => {
@@ -164,6 +168,12 @@ export function Home() {
               </div>
             </div>
           </section>
+
+          {/* Aggregated Sections */}
+          <About />
+          <Rooms />
+          <FAQ />
+          <Contact />
         </main>
       </div>
     </>

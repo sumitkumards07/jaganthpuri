@@ -52,7 +52,7 @@ export function FAQ() {
   };
 
   return (
-    <>
+    <section id="faq" className="pt-20">
       <div className="bg-[#eab308] text-[#1e3a5f] py-12 text-center">
         <h1 className="text-4xl font-bold">Frequently Asked Questions</h1>
       </div>
@@ -86,6 +86,6 @@ export function FAQ() {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 }
