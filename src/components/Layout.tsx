@@ -128,7 +128,7 @@ export function Layout() {
       {/* Floating Action Buttons */}
       <a
         href={`tel:+${PHONE_NUMBER}`}
-        className="fixed bottom-6 left-6 bg-[#1e3a5f] text-white p-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 z-50 flex items-center justify-center"
+        className="fixed bottom-6 left-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 z-50 flex items-center justify-center"
         aria-label="Call Us"
       >
         <Phone className="h-6 w-6" />
