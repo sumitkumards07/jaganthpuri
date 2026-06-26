@@ -3,6 +3,8 @@ import { PHONE_NUMBER } from '../components/Layout';
 import { MapPin, Wifi, HeadphonesIcon, Bed, Monitor, Bath, Laptop, Star, Snowflake, Sofa, Phone } from 'lucide-react';
 import { About } from './About';
 import { Rooms } from './Rooms';
+import { BookingProcess } from './BookingProcess';
+import { Heritage } from './Heritage';
 import { FAQ } from './FAQ';
 import { Contact } from './Contact';
 
@@ -25,9 +27,8 @@ export function Home() {
             ></div>
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#1e3a5f]/80"></div>
             <div className="relative z-10 text-center max-w-4xl px-6 sm:px-12 flex flex-col items-center mt-16">
-              <span className="text-[#eab308] font-semibold tracking-widest uppercase text-sm mb-4 block drop-shadow-md">Welcome to</span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-                Your Premium Stay <br/> in <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eab308] to-orange-400">Puri</span>
+                Welcome to <br/> Jagannath Puri <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eab308] to-orange-400">Temple Stay</span>
               </h1>
 
               <div className="flex flex-col sm:flex-row justify-center gap-5 w-full sm:w-auto mt-8">
@@ -46,6 +47,9 @@ export function Home() {
               </div>
             </div>
           </section>
+
+          <About />
+          <Rooms />
 
           {/* Why Choose Us */}
           <section className="max-w-[1200px] mx-auto px-4 py-20">
@@ -78,11 +82,8 @@ export function Home() {
             </div>
           </section>
 
-
-
-          {/* Aggregated Sections */}
-          <About />
-          <Rooms />
+          <BookingProcess />
+          <Heritage />
           <FAQ />
           <Contact />
         </main>
