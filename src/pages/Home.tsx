@@ -28,7 +28,7 @@ export function Home() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#1e3a5f]/80"></div>
             <div className="relative z-10 text-center max-w-4xl px-6 sm:px-12 flex flex-col items-center mt-16">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-                Welcome to <br/> Jagannath Puri <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eab308] to-orange-400">Temple Stay</span>
+                Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eab308] to-orange-400">Jagannath Puri Temple Stay</span>
               </h1>
 
               <div className="flex flex-col sm:flex-row justify-center gap-5 w-full sm:w-auto mt-8">
