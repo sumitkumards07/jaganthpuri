@@ -3,6 +3,7 @@ import { CheckCircle, MapPin, ShieldCheck, Car, Wifi, Coffee } from 'lucide-reac
 import { CheckCircle, MapPin, ShieldCheck, Car, Wifi, Coffee } from 'lucide-react';
 
 export function About() {
+  return (
     <section id="about" className="pt-20">
       <div className="bg-[#eab308] text-[#1e3a5f] py-12 text-center">
         <h1 className="text-4xl font-bold">About Us</h1>

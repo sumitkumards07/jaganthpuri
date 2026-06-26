@@ -38,6 +38,7 @@ export function Heritage() {
           <h3 className="text-3xl font-bold text-[#1e3a5f] mt-16 mb-6">A Journey of Faith</h3>
           <p className="mb-0 text-lg leading-relaxed">As one of the world's most visited religious sites, Puri transcends boundaries, offering every visitor a profound sense of peace and spiritual awakening. From the world-famous Mahaprasad to the soul-stirring rituals, every moment spent here is a testament to the enduring power of devotion.</p>
         </div>
+        </div>
       </div>
     </>
   );
