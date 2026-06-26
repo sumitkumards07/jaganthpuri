@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { X, MessageCircle } from 'lucide-react';
+import { X } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export function BookingModal({ roomName, onClose, phoneNumber }: { roomName: string, onClose: () => void, phoneNumber: string }) {
   const [formData, setFormData] = useState({
@@ -64,7 +65,7 @@ export function BookingModal({ roomName, onClose, phoneNumber }: { roomName: str
             </select>
           </div>
           <button type="submit" className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3 px-4 rounded-md transition flex justify-center items-center mt-6">
-            <MessageCircle className="mr-2 h-5 w-5" /> Send via WhatsApp
+            <WhatsAppIcon className="mr-2 h-5 w-5" /> Send via WhatsApp
           </button>
           </form>
         </div>

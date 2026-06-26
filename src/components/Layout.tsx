@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Youtube, Menu, X, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Youtube, Menu, X } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const PHONE_NUMBER = "919728927086";
 
@@ -141,7 +142,7 @@ export function Layout() {
         className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 z-50 flex items-center justify-center"
         aria-label="WhatsApp Us"
       >
-        <MessageCircle className="h-6 w-6" />
+        <WhatsAppIcon className="h-6 w-6" />
       </a>
     </div>
   );
