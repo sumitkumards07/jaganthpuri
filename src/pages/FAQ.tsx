@@ -7,7 +7,7 @@ export function FAQ() {
   const faqs = [
     {
       question: "How can I book a room at Jagannath Puri Stay?",
-      answer: "You can book a room easily by clicking the 'Book Now' button on our website, which will open a WhatsApp chat with our booking team. Alternatively, you can call us directly at +91 97289 27086."
+      answer: "You can book a room easily by clicking the 'Book Now' button on our website, which will open a WhatsApp chat with our booking team. Alternatively, you can call us directly at +91 75498 60743."
     },
     {
       question: "Are the rooms near Jagannath Puri Stay affordable?",
